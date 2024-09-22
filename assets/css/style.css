@@ -1,0 +1,80 @@
+:root {
+    --outerspace: #33393f; 
+    --bright-turquoise: #2aefcb;
+    --gin: #e0eae4;
+    --heliotrope: #e866ec;
+}
+
+h1,h2,h3{
+    color: var(--heliotrope);
+    margin-bottom: 0.625rem;
+    color: var(--heliotrope);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+h1 {
+    /* 4rem = 40px (4 * 10px) */
+    font-size: 3rem;
+    text-align: center;
+  }
+
+header p {
+    text-align: center;
+    color: var(--gin);
+}
+  
+h2 {
+    font-size: 2.5rem;
+    border: 2px solid var(--gin);
+    border-radius: 8px;
+  }
+  
+h3 {
+    font-size: 2rem;
+  }
+body {
+    background-color: var(--outerspace);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    display: flex;
+    outline: 2px dashed var(--gin);
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+}
+
+section p {
+    color: var(--gin);
+}
+
+code {
+    /* Monospace font stack is used for our code blocks to make it look more like code */
+    font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+      'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+      'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
+      monospace;
+  }
+
+#code-block {
+  white-space: pre-wrap;
+  overflow: auto;
+  tab-size: 4;
+  padding: 1.2rem 1rem;
+  color: var(--gin);
+  border-radius: 8px;
+  /* use linear-gradient() function to create a fading background  */
+  background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+  );
+  display: flex;
+  align-items: center;
+}
